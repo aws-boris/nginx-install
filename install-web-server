@@ -1,0 +1,12 @@
+#!/bin/bash
+#updatera OS
+sudo apt update
+
+#installera nginx
+sudo apt install nginx -y
+
+#installera curl för att kunna testa webbsidan med terminalen
+sudo apt install curl -y
+
+#kopiera html mappen till rätt ställe
+sudo cp -R /home/boris/nginx_html/index.html /var/www/html
